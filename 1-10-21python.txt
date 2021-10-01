@@ -1,0 +1,42 @@
+1---
+
+a=input("введите имя: ")
+print("привет, ", a)
+
+
+2---
+
+a=float(input("Введите N: "))
+b=float(input("Введите длину: "))
+S=a*b
+print(S)
+
+3---
+
+n=int(input("Последнее число= "))
+print("Сумма от 1 до", n, "=", sum([ i for i in range(1, n+1)]))
+
+4---
+
+h=float(input("Введите часы= "))
+m=float(input("Введите минуты= "))
+s=float(input("Введите секунды= "))
+SS=(h*3600)+(m*60)+(s)
+print("Время в секундах: ", SS)
+
+5---
+
+h=float(input("Введите рост (в метрах): "))
+w=float(input("Введите вес в (килограммах): "))
+BMI=w/h/h
+print("Индекс массы тела: ", BMI)
+
+6---
+
+n=int(input("Введите целое число: "))
+summ=0
+while n>0:
+    digit=n % 10
+    summ=summ+digit
+    n=n//10
+print("Сумма цифр целого числа = ", summ)
